@@ -1,0 +1,4 @@
+---
+## Simple dependency; no point in installing PHP without a web server (Apache in this case)
+dependencies:
+  - { role: server_apache2 }

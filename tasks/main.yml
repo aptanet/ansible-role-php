@@ -1,0 +1,8 @@
+--
+## Simple role to install the PHP for the dokuwiki role (see separate repository)
+## php installation
+- name: install php
+  apt: pkg={{item}} state=present update-cache=true
+  with_items:
+    - php
+    - libapache2-mod-php
